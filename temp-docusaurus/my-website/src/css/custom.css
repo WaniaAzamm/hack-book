@@ -1,0 +1,155 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Color System */
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-success: #3e926f;
+  --ifm-color-info: #3578e5;
+  --ifm-color-warning: #d97706;
+  --ifm-color-danger: #e33d3d;
+
+  /* Typography */
+  --ifm-font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --ifm-font-size-base: 100%;
+  --ifm-line-height-base: 1.6;
+  --ifm-heading-font-weight: 600;
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 2rem;
+  --ifm-h3-font-size: 1.5rem;
+
+  /* Spacing */
+  --ifm-global-spacing: 1rem;
+  --ifm-spacing-vertical: var(--ifm-global-spacing);
+  --ifm-spacing-horizontal: var(--ifm-global-spacing);
+  --ifm-contents-margin: var(--ifm-global-spacing);
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Academic-specific styling */
+.academic-content {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.6;
+}
+
+.figure-caption {
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 0.5em;
+  color: #666;
+}
+
+.citation {
+  font-size: 0.9em;
+  padding: 0.5em 0;
+  border-left: 3px solid #ccc;
+  margin: 1em 0;
+  padding-left: 1em;
+}
+
+/* Global styles for improved typography and spacing */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Improved code block styling */
+code {
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 0.9em;
+}
+
+pre {
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+/* Blockquote styling */
+blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* List styling */
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Table styling */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+th {
+  background-color: var(--ifm-table-head-background);
+  font-weight: 600;
+}

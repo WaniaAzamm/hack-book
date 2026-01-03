@@ -1,0 +1,16 @@
+.features {
+  padding: 4rem 0;
+  width: 100%;
+  background-color: white;
+}
+
+.featureSvg {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto 1rem;
+  color: var(--ifm-color-primary);
+}
+
+.featureIcon {
+  margin-bottom: 1.5rem;
+}

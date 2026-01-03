@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.specify/scripts/powershell/setup-plan.ps1 -Json)",
+      "Skill(sp.adr)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \".specify/scripts/powershell/update-agent-context.ps1\" -AgentType claude)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \".specify/scripts/powershell/check-prerequisites.ps1\" -Json)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \".specify/scripts/powershell/check-prerequisites.ps1\" -Json -RequireTasks -IncludeTasks)",
+      "Bash(wc -w temp-docusaurus/my-website/docs/module-2/*.md)",
+      "Bash(npx docusaurus build)",
+      "Bash(npm start)",
+      "Bash(git fetch --all --prune)",
+      "Bash(git checkout -b 2-ai-robot-brain)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \".specify/scripts/powershell/setup-plan.ps1\" -Json)",
+      "Bash(if Test-Path \"D:\\\\hack-book\\\\specs\\\\2-ai-robot-brain\\\\checklists\" -PathType Container)",
+      "Bash(then Get-ChildItem \"D:\\\\hack-book\\\\specs\\\\2-ai-robot-brain\\\\checklists\" -Filter \"*.md\")",
+      "Bash(else Write-Output \"No checklists directory found\")",
+      "Bash(fi)",
+      "Bash(powershell.exe -Command \"if \\(Test-Path ''D:\\\\hack-book\\\\specs\\\\2-ai-robot-brain\\\\checklists'' -PathType Container\\) { Get-ChildItem ''D:\\\\hack-book\\\\specs\\\\2-ai-robot-brain\\\\checklists'' -Filter ''*.md'' } else { Write-Output ''No checklists directory found'' }\")",
+      "Bash(mkdir -p docs/module-3)",
+      "Bash(find specs/ -name \"*.md\" -exec grep -l \"Module 4\\\\|module 4\" {} ;)",
+      "Bash(wc -w temp-docusaurus/my-website/docs/module-4/*.md)",
+      "Bash(npx docusaurus start)",
+      "Bash(.specify/scripts/powershell/create-new-feature.ps1 -Json \"Upgrade UI for Docusaurus Project\n\nTarget folder: temp-docusaurus/my-website\nTarget audience: Developers maintaining documentation UX\nFocus: Improve visual theme, navigation clarity, and modern UI components\n\nSuccess criteria:\n- Applies a modern Docusaurus theme or custom styling\n- Updates navbar, footer, and sidebar structure\n- Improves typography and spacing across docs\n- Confirms site builds and runs without breaking pages\" -Json -Number 1 -ShortName \"docusaurus-ui\")",
+      "Bash(.specify/scripts/bash/create-new-feature.sh \"Upgrade UI for Docusaurus Project\n\nTarget folder: temp-docusaurus/my-website\nTarget audience: Developers maintaining documentation UX\nFocus: Improve visual theme, navigation clarity, and modern UI components\n\nSuccess criteria:\n- Applies a modern Docusaurus theme or custom styling\n- Updates navbar, footer, and sidebar structure\n- Improves typography and spacing across docs\n- Confirms site builds and runs without breaking pages\" --number 1 --short-name \"docusaurus-ui\")"
+    ]
+  }
+}

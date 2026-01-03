@@ -1,0 +1,89 @@
+# Docusaurus Theme API Contract
+
+## Overview
+
+This contract defines the interface and expected behavior for custom theme components that will be implemented as part of the Docusaurus UI upgrade.
+
+## Custom CSS Variables Contract
+
+### Color Variables
+```
+--ifm-color-primary: #xxxxxx (main primary color)
+--ifm-color-primary-dark: #xxxxxx (darker shade of primary)
+--ifm-color-primary-darker: #xxxxxx (even darker shade)
+--ifm-color-primary-darkest: #xxxxxx (darkest shade)
+--ifm-color-primary-light: #xxxxxx (lighter shade of primary)
+--ifm-color-primary-lighter: #xxxxxx (even lighter shade)
+--ifm-color-primary-lightest: #xxxxxx (lightest shade)
+--ifm-color-success: #xxxxxx (success state color)
+--ifm-color-info: #xxxxxx (info state color)
+--ifm-color-warning: #xxxxxx (warning state color)
+--ifm-color-danger: #xxxxxx (danger/error state color)
+```
+
+### Typography Variables
+```
+--ifm-font-family-base: string (font family for body text)
+--ifm-font-family-monospace: string (font family for code)
+--ifm-font-size-base: string (base font size, e.g., 16px)
+--ifm-line-height-base: number (base line height ratio)
+--ifm-heading-font-weight: number (font weight for headings)
+--ifm-h1-font-size: string (font size for h1)
+--ifm-h2-font-size: string (font size for h2)
+--ifm-h3-font-size: string (font size for h3)
+```
+
+### Spacing Variables
+```
+--ifm-global-spacing: string (base spacing unit, e.g., 1rem)
+--ifm-spacing-vertical: string (vertical spacing)
+--ifm-spacing-horizontal: string (horizontal spacing)
+--ifm-contents-margin: string (margin for content sections)
+```
+
+## Component Interface Contract
+
+### Navbar Component
+- Must accept `items` prop with navigation items
+- Must support dropdown menu functionality
+- Must be responsive and mobile-friendly
+- Must maintain accessibility standards
+
+### Sidebar Component
+- Must accept hierarchical navigation structure
+- Must support collapsible sections
+- Must maintain current page highlighting
+- Must be keyboard navigable
+
+### Footer Component
+- Must accept configurable links and content
+- Must be responsive across screen sizes
+- Must maintain consistent styling
+
+## Responsive Design Contract
+
+### Breakpoints
+- Mobile: max-width: 375px
+- Tablet: 376px - 768px
+- Desktop: min-width: 769px
+
+### Responsive Behaviors
+- Navigation must convert to hamburger menu on mobile
+- Typography must scale appropriately
+- Spacing must adjust for smaller screens
+- Components must maintain usability at all sizes
+
+## Accessibility Contract
+
+### Color Contrast
+- All text must meet WCAG 2.1 AA contrast standards (4.5:1 for normal text, 3:1 for large text)
+
+### Keyboard Navigation
+- All interactive elements must be keyboard accessible
+- Focus indicators must be visible
+- Logical tab order must be maintained
+
+### Screen Reader Compatibility
+- All components must have appropriate ARIA labels
+- Semantic HTML structure must be preserved
+- Alt text must be provided for images

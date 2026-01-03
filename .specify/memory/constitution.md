@@ -1,55 +1,37 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- Version change: 0.1.0 → 1.0.0
+- Added principles for Physical AI & Humanoid Robotics textbook project
+- Added academic standards and citation requirements
+- Established quality metrics for academic content -->
+
+# Physical AI & Humanoid Robotics Textbook Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Academic Accuracy and Source Verification
+All content must be verified from primary academic sources with traceable citations. Claims must be reproducible through peer-reviewed research and properly attributed to original authors. No content should be included without verified academic backing.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Student-Centered Clarity
+Content must be designed specifically for CS and engineering students with clear explanations, accessible examples, and progressive complexity. Language should target Flesch-Kincaid grade level 10-12 to ensure comprehension across diverse academic backgrounds.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Rigorous Peer-Reviewed Standards (NON-NEGOTIABLE)
+All content must meet academic publication standards: facts verified through peer-reviewed research, methodology clearly explained, experimental results reproducible, and all claims supported by credible evidence from scholarly sources.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Comprehensive Source Integration
+Each chapter must incorporate a minimum of 15 academic sources with at least 50% being peer-reviewed publications. All sources must follow strict APA citation format with complete bibliographic information for student accessibility.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Anti-Plagiarism and Original Contribution
+All content must be original work with 0% plagiarism tolerance. Direct quotations must be properly cited, and all concepts must be explained in original academic language that contributes to the educational discourse rather than merely reproducing existing texts.
 
-### [PRINCIPLE_6_NAME]
+### Content Length and Structure Standards
+Textbook must maintain 5,000-7,000 words per major section with clear learning objectives, concept summaries, and assessment questions. Content must be structured for semester-long course delivery with logical progression of topics.
 
+## Academic Standards
+All content must meet university-level academic standards with formal academic tone, rigorous fact-checking, and adherence to scholarly writing conventions. Content must include embedded citations, comprehensive reference lists, and cross-referenced concepts for academic integrity.
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Quality Assurance Process
+Every section must undergo multi-stage review: initial fact-check against primary sources, peer review by subject matter experts, plagiarism scan verification, and academic advisor approval. Final content must pass academic fact-check validation before publication.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution governs all aspects of the Physical AI & Humanoid Robotics textbook development. All contributors must verify compliance with academic standards. Complexity must be academically justified with clear pedagogical purpose. Use this constitution as the primary guidance for content development and quality assurance.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-18 | **Last Amended**: 2025-12-18

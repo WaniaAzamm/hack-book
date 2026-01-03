@@ -1,0 +1,41 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.footer {
+  padding: 2rem 0;
+  background-color: var(--ifm-footer-background-color, #2b3137);
+}
+
+.footer__linkItem {
+  color: var(--ifm-footer-link-color);
+  display: block;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem 0;
+}
+
+.footer__linkItem:hover {
+  text-decoration: none;
+  color: var(--ifm-footer-link-hover-color);
+}
+
+.footerBottom {
+  border-top: 1px solid var(--ifm-toc-border-color);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo {
+  max-height: 30px;
+  max-width: 150px;
+}
